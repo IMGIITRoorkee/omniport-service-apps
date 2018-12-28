@@ -1,0 +1,7 @@
+nomenclature:
+  name: apps
+  verboseName: Apps
+description: Find all the apps that make up Omniport
+baseUrls:
+  http: apps/
+isApi: true
