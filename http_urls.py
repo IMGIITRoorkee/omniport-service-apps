@@ -6,7 +6,7 @@ from apps.views.apps import AppViewSet
 app_name = 'apps'
 
 router = routers.SimpleRouter()
-router.register(r'app', AppViewSet, base_name='app')
+router.register(r'app', AppViewSet, basename='app')
 
 urlpatterns = [
     path('', include(router.urls)),
