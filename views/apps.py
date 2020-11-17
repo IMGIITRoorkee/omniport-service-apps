@@ -1,5 +1,4 @@
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated
 
 from discovery.available import available_apps
 from configuration.serializers.app.app import AppSerializer
@@ -10,7 +9,6 @@ class AppViewSet(viewsets.ReadOnlyModelViewSet):
     Return the information on various apps on Omniport
     """
 
-    permission_classes = [IsAuthenticated, ]
     serializer_class = AppSerializer
     pagination_class = None
     lookup_field = 'name'
